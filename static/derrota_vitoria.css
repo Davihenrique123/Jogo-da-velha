@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(/static/Img/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.caixa{
+    font-family: Lucida Handwriting;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(51, 51, 51, 0.441);
+    border: solid black 3px;
+    padding: 70px 70px;
+    border-radius: 30px;
+    text-align: center;
+      text-align: center;
+}
+
+button{
+    background-color: #6445d4;
+    padding: 11px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    height:40px;
+    width: 180px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+button:hover{
+    transition: 0.7s;
+    background-color: rgba(240, 240, 240, 0.645);
+}
+
+.venceu{
+    color: white;
+    padding: 10px;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='intruçoes.css') }}">
+    <title>Instruções</title>
+</head>
+<body>
+    <form action="/menu_volta" method="GET">
+    <div class="tudo">
+        <div>
+      <button class="esquerda">Menu</button>
+    </form>
+    </div>
+        <div class="instrucao">
+            <h1><p>Instrucões</p></h1>
+            <h1><p>Objetivo</p></h1>
+            <h3><p>Conseguir formar primeiro uma linha com três símbolos iguais, seja ela na horizontal, vertical ou diagonal.</p></h3>
+            <h1><p>Preparação</p></h1>
+            <h3><p>O jogador terá que escolher entre X ou O.</p></h3>
+            <h1><p>Turnos</p></h1>
+            <h3><p>Em cada turno, os jogadores escolhem uma casa para preencher.</p></h3>
+            <h3><p>Caso o jogador escolha uma casa já ocupada sua vez será passada.</p></h3>
+            <h1><p>Velha</p></h1>
+            <h3><p>Caso o jogo não resulte em nenhum sequência da forma descrita no objetivo ele empata, ou como é popularmente dito, da velha fazendo referência ao nome do jogo.</p></h3>
+            <h1><p>Ganhador</p></h1>
+            <h3><p>O primeiro jogador a formar uma linha com três símbolos iguais.</p></h3>
+            <h1><p>Modo Extra</p></h1>
+            <h3><p>O modo extra(CPU vs CPU) consiste em uma aposta entre X ou O onde o resultado é armazenado no histórico do jogador</p></h3>
+        </div>
+
+        <div class="direita">
+            <form action="/jogo" method="GET">  
+                <button>Jogar</button>
+            </form>
+        </div>
+</div> 
+</body>
+</html>

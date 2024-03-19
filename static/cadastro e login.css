@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/static/Img/Fundo\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form{
+    background-color: rgba(171, 171, 171, 0.441);
+    border: solid black 3px;
+    margin: 60px;
+    padding: 70px 70px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+a, p{
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover{
+    color: black;
+}
+
+h4{
+    color: white;
+    font-size: 30px;
+    font-family: 'Trebuchet MS';
+}
+
+input{
+    border-radius: 15px;
+    padding: 11px 20px;
+}
+
+img{
+    height: 90px; 
+    width: 200px; 
+}
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu &#128564</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        {% if nome_usuario %}
+            <h2>Bem-vindo(a) {{name}}</h2>
+        {% endif %}
+        <br>
+        <img src="/static/Img/Logo.png">
+        <div class="buttons">
+            <form action="/escolha">
+                <button type="submit" id="1" onclick="Modo_de_jogo(this.id)"><h4>Player vs CPU</h4></button>
+            </form>
+
+            <form action="/escolha">
+                <button type="submit" id="2" onclick="Modo_de_jogo(this.id)"><h4>Player vs Player</h4></button>
+            </form>
+
+            <form action="/escolha">
+                <button type="submit" id="3" onclick="Modo_de_jogo(this.id)"><h4>CPU vs CPU</h4></button>
+            </form>
+
+            <form action="/informacoes">
+                <button type="submit"><h4>Histórico</h4></button>
+            </form>
+
+            <form method="POST" action="/instrucao">
+                <button class="instrucao" type="submit"><h4>Instrucões</h4></button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

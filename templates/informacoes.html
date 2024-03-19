@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='informacoes.css') }}">
+  <title>Histótico</title>
+</head>
+<body>
+  <div class="tudo">
+    <h1>Digite o Nome do Usuário</h1>
+    <form method="get" action="/historico">
+      <input type="text" id="nome" placeholder="nome do usuario" name="nome" required>
+      <button type="submit"><p>Enviar</p></button>
+    </form>
+  </div>
+</body>
+</html>

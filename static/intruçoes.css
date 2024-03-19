@@ -1,0 +1,101 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/static/Img/Fundo.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.instrucao {
+    background-color: rgba(65, 64, 64, 0.807);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+}
+
+h1, h3, p {
+    margin: 0;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.tudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 180px;
+    margin-right:20px;
+}
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 180px;
+    margin-right:20px;
+    
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 11px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    height:40px;
+    width: 180px;
+    margin: 20px;
+}
+
+button:hover{
+    transition: 0.7s;
+    background-color: rgba(240, 240, 240, 0.645);
+}

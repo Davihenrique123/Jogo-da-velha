@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='resultado.css') }}">
+  <title>Histórico do Jogo para {{ nome }}</title>
+</head>
+<body>
+
+  <h1>Histórico de Jogo ({{ nome }})</h1>
+
+  <div class="container">
+    <div class="info-box" id="vitorias">
+      <h2>Vitórias</h2>
+      <br>
+      <h2>{{ informacoes.vitorias }}</h2>
+    </div>
+
+    <div class="info-box" id="derrotas">
+      <h2>Derrotas</h2>
+      <br>
+      <h2>{{ informacoes.derrotas }}</h2>
+    </div>
+
+    <div class="info-box" id="derrotas">
+      <h2>Velhas</h2>
+      <br>
+      <h2>{{ informacoes.velhas }}</h2>
+    </div>
+
+    <div class="info-box" id="partidas">
+      <h2>Partidas</h2>
+      <br>
+      <h2>{{informacoes.partidas}}</h2>
+    </div>
+  </div>
+
+</body>
+</html>

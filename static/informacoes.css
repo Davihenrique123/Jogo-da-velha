@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(/static/Img/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: Lucida Handwriting;
+}
+
+form {
+    width: 300px; /* ou a largura desejada para o seu formulário */
+    border-radius: 50px;
+    text-align: center;
+    margin: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    border: solid black 2px;
+    padding: 8px 16px;
+    background-color: white;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button p{
+    color: black;
+}
+
+.tudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 250px;
+}
+
+#nome{
+    border-radius: 70px;
+    padding: 10px;
+}

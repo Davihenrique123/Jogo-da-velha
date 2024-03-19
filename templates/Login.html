@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cadastro e login.css') }}">
+    <title>Login &#128564</title>
+</head>
+<body>
+    <style>
+        form{
+            margin-top: 140px;
+        }
+    </style>
+    <form action="http://localhost:5000/login" method="post">
+        <img src="/static/Img/Logo.png" alt="">
+        <p><input type="text" name="nm"  placeholder="Usuario"></p>
+        <p><input type="password" name="pass" placeholder="Senha"></p>
+        {% if teste %}
+            <span>Usuário ou senha incorretos</span>
+        {% endif %}
+        <p><input type="submit" value="Entrar"></p>
+        <a href="/cadastro">Cadastre-se</a>
+    </form>
+</body>
+</html>
